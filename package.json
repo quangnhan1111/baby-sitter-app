@@ -1,0 +1,48 @@
+{
+  "name": "adopt-pets",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "@fullcalendar/daygrid": "^5.7.0",
+    "@fullcalendar/interaction": "^5.7.0",
+    "@fullcalendar/list": "^5.7.0",
+    "@fullcalendar/moment": "^5.7.0",
+    "@fullcalendar/rrule": "^5.7.0",
+    "@fullcalendar/timegrid": "^5.7.0",
+    "@fullcalendar/vue": "^5.7.0",
+    "axios": "^0.21.1",
+    "bootstrap-vue": "2.0.0-rc.14",
+    "fullcalendar": "^4.0.0-alpha",
+    "mdbvue": "^6.7.2",
+    "moment": "^2.29.1",
+    "rrule": "^2.6.8",
+    "uuid": "^8.3.2",
+    "vue": "^2.6.6",
+    "vue-axios": "^3.2.4",
+    "vue-i18n": "^8.24.4",
+    "vue-js-modal": "^2.0.0-rc.6",
+    "vue-router": "^3.0.1",
+    "vue-uuid": "^2.0.2",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
