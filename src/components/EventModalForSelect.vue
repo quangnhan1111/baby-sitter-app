@@ -52,6 +52,7 @@ export default {
       let idEventNotRepeated = createEventId()
       let calendarApi = this.selectInfo.view.calendar
       if (this.title) {
+        // eslint-disable-next-line no-unused-expressions
         this.calendarForDb = {
           id: idEventNotRepeated,
           title: this.title,
@@ -70,6 +71,7 @@ export default {
           selectable: true,
           editable: true,
           overlap: true
+          // eslint-disable-next-line no-sequences
         },
         this.calendar = {
           id: idEventNotRepeated,
@@ -163,7 +165,7 @@ export default {
         }
       }
     },
-    addCalendar(calendar) {
+    async addCalendar(calendar) {
       // Khởi tạo
       var objCalendar = {}
       objCalendar.id = calendar.id
@@ -181,10 +183,14 @@ export default {
       objCalendar.selectable = calendar.selectable
       objCalendar.parent_id = null
       console.log(objCalendar)
-      axios.post('http://127.0.0.1:8000/api/calendars', objCalendar, {
+      await axios.post('http://127.0.0.1:8000/api/calendars', objCalendar, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token')
         }
+      }).then((response) => {
+        console.log(response.data)
+      }).catch((error) => {
+        console.log(error.data)
       })
     }
   }

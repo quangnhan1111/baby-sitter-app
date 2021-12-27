@@ -28,15 +28,17 @@ import rrulePlugin from '@fullcalendar/rrule'
 import momentPlugin from '@fullcalendar/moment'
 import ListPlugin from '@fullcalendar/list'
 import moment from 'moment'
-import EventModal from '@/components/EventModal.vue'
-import EventModalForSelect from '@/components/EventModalForSelect.vue'
+import EventModal from '../components/EventModal'
+import EventModalForSelect from '../components/EventModalForSelect.vue'
 import axios from 'axios'
 
 export default {
   name: 'Calendar',
   components: {
     FullCalendar,
+    // eslint-disable-next-line vue/no-unused-components
     EventModal,
+    // eslint-disable-next-line vue/no-unused-components
     EventModalForSelect
   },
   data() {
@@ -115,7 +117,7 @@ export default {
     },
     async handleEventDrog(clickInfo) {
       // await this.$store.dispatch("fetchCalendar", clickInfo.event.id)
-      if (clickInfo.event.backgroundColor != 'green') {
+      if (clickInfo.event.backgroundColor !== 'green') {
         await this.fetchCalendar(clickInfo.event.id)
         this.$store.commit('LOADER', true)
         // this.objCal = this.$store.state.event
@@ -138,7 +140,7 @@ export default {
     },
     async handleEventResize(clickInfo) {
       // await this.$store.dispatch("fetchCalendar", clickInfo.event.id)
-      if (clickInfo.event.backgroundColor != 'green') {
+      if (clickInfo.event.backgroundColor !== 'green') {
         await this.fetchCalendar(clickInfo.event.id)
         this.$store.commit('LOADER', true)
         console.log(this.objCal)

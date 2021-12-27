@@ -39,7 +39,6 @@
 <script>
 import axios from 'axios'
 import { formatDate } from '@/utils/helpers.js'
-import { CalendarApi } from '@fullcalendar/vue'
 
 export default {
   data: () => ({
@@ -64,6 +63,7 @@ export default {
   },
   created() {
     // this.$store.dispatch("fetchCalendar", this.event.id)
+    console.log(this.$store.state.user)
     this.user = this.$store.state.user
     // console.log(this.user)
     this.idCurrentUser = localStorage.getItem('id')
