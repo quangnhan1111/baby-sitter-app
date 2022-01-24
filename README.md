@@ -1,29 +1,5 @@
-# adopt-pets
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Tham Khảo:
+https://www.youtube.com/watch?v=A-ESlbM-XzE&t=1233s
+https://www.youtube.com/watch?v=2NOsjTT1b_k&t=432s
+https://loading.io/css/
+Add the Loading Spinner Component and use it with the help of store: https://www.youtube.com/watch?v=pGKSBO9tAUo
